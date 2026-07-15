@@ -52,7 +52,7 @@ export default function LoginPage() {
               onChange={(e) => setUsername(e.target.value)}
               autoFocus
               autoComplete="username"
-              className="w-full p-2.5 border border-slate-300 rounded-lg bg-slate-50 text-sm outline-none focus:border-indigo-500"
+              className="text-black w-full p-2.5 border border-slate-300 rounded-lg bg-slate-50 text-sm outline-none focus:border-indigo-500"
             />
           </div>
           <div>
@@ -64,7 +64,7 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               autoComplete="current-password"
-              className="w-full p-2.5 border border-slate-300 rounded-lg bg-slate-50 text-sm outline-none focus:border-indigo-500"
+              className="text-blackw-full p-2.5 border border-slate-300 rounded-lg bg-slate-50 text-sm outline-none focus:border-indigo-500"
             />
           </div>
 
@@ -83,9 +83,6 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p className="text-[11px] text-slate-400 text-center mt-6">
-          จัดการบัญชีผู้ใช้ได้ในแท็บ &quot;Users&quot; ของ Google Sheet
-        </p>
       </div>
     </main>
   );
