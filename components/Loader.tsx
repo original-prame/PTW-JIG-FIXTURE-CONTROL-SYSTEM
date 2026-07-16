@@ -9,7 +9,7 @@ interface LoaderProps {
  * plus a "..." pulsing-dots label. Replaces the old plain animate-pulse
  * text line shown while the dashboard's data is being fetched.
  */
-export function Loader({ label = "กำลังประมวลผลข้อมูลสดจาก Google Sheets" }: LoaderProps) {
+export function Loader({ label = "กำลังโหลดข้อมูลจาก Google Sheets" }: LoaderProps) {
   return (
     <div className="flex flex-col items-center justify-center gap-5 py-20">
       <div className="relative w-16 h-16">
