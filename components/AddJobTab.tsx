@@ -57,7 +57,7 @@ function JobRowFields({ job, onChange, customerOptions }: JobRowFieldsProps) {
           value={job.desc}
           onChange={(e) => onChange({ ...job, desc: e.target.value })}
           className="w-full p-2.5 border rounded-lg text-sm outline-none focus:ring-1 focus:ring-indigo-500"
-          placeholder="เช่น SWM PCB Cutting jig"
+          placeholder="กรอกรายละเอียดงาน / Model / ชิ้นงาน"
         />
       </div>
 
@@ -88,7 +88,7 @@ function JobRowFields({ job, onChange, customerOptions }: JobRowFieldsProps) {
             value={job.po}
             onChange={(e) => onChange({ ...job, po: e.target.value })}
             className="w-full p-2.5 border rounded-lg text-sm outline-none focus:ring-1 focus:ring-indigo-500"
-            placeholder="เช่น G1188"
+            placeholder="กรอกเลขที่ใบสั่งซื้อ (หากมี)"
           />
         </div>
         <div>
@@ -98,7 +98,7 @@ function JobRowFields({ job, onChange, customerOptions }: JobRowFieldsProps) {
             value={job.quote}
             onChange={(e) => onChange({ ...job, quote: e.target.value })}
             className="w-full p-2.5 border rounded-lg text-sm outline-none focus:ring-1 focus:ring-indigo-500"
-            placeholder="เช่น PTW-1703..."
+            placeholder="กรอกเลขที่ใบเสนอราคา (หากมี)"
           />
         </div>
       </div>
@@ -110,7 +110,7 @@ function JobRowFields({ job, onChange, customerOptions }: JobRowFieldsProps) {
             value={job.price}
             onChange={(v) => onChange({ ...job, price: v })}
             className="w-full pl-6 p-2.5 border rounded-lg text-sm outline-none bg-white focus:ring-1 focus:ring-indigo-500"
-            placeholder="เช่น 15,000"
+            placeholder="กรอกราคาต่อหน่วย / ราคารวม"
           />
         </div>
         <ThaiDateField
@@ -126,6 +126,7 @@ function JobRowFields({ job, onChange, customerOptions }: JobRowFieldsProps) {
           value={job.remark}
           onChange={(e) => onChange({ ...job, remark: e.target.value })}
           className="w-full p-2.5 border rounded-lg h-20 text-sm outline-none focus:ring-1 focus:ring-indigo-500"
+          placeholder="ระบุข้อมูลเพิ่มเติม..."
         ></textarea>
       </div>
     </div>

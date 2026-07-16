@@ -134,7 +134,7 @@ function DeliveryRowFields({ delivery, onChange, allJobs }: DeliveryRowFieldsPro
           value={delivery.noteNo}
           onChange={(e) => onChange({ ...delivery, noteNo: e.target.value })}
           className="w-full p-2.5 border rounded-lg text-sm outline-none focus:ring-1 focus:ring-indigo-500"
-          placeholder="เช่น 0204"
+          placeholder="กรอกเลขที่ใบส่งของชั่วคราว"
         />
       </div>
       <div>
@@ -144,7 +144,7 @@ function DeliveryRowFields({ delivery, onChange, allJobs }: DeliveryRowFieldsPro
           value={delivery.invoiceNo}
           onChange={(e) => onChange({ ...delivery, invoiceNo: e.target.value })}
           className="w-full p-2.5 border rounded-lg text-sm outline-none focus:ring-1 focus:ring-indigo-500"
-          placeholder="เช่น IV610"
+          placeholder="กรอกเลขที่ใบกำกับภาษี / Invoice (ถ้ามี)"
         />
       </div>
       <div>
